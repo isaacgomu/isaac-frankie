@@ -1,42 +1,31 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+@tailwind utilities; */
 
 body {
   color: black;
   background-color: white;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-main {
+.home-page {
   margin-left: 5rem;
+  padding-top: 1rem;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h1 {
+  margin: 0;
 }
 
 .navbar {
   width: 2rem;
   height: 100vh;
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   background-color: rgb(45, 0, 63);
   transition: width 200ms ease;
 }
@@ -54,6 +43,7 @@ main {
   display: flex;
   align-items: center;
   height: 5rem;
+  width: max-content;
   color: var(--text-primary);
   text-decoration: none;
 }
@@ -63,6 +53,9 @@ main {
   opacity: 0;
   color: white;
   transition: opacity 200ms ease, visibility 0s linear 200ms;
+}
+.link-text:hover {
+  color: orange;
 }
 
 .navbar:hover {

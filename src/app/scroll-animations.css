@@ -1,0 +1,54 @@
+.scroll-indicator-container {
+  padding: 3rem;
+}
+
+/* This is the bar at the top of our page */
+.scroll-watcher {
+  height: 10px;
+  margin-left: 2rem;
+
+  /* position:fixed keeps it at the top of our viewport when we scroll */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  background-color: tomato;
+  /* 100 viewport width, so it spans the screen. You might use 100% if its within a container */
+  width: 100vw;
+  transform-origin: left;
+  scale: 0.005 1;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll();
+}
+
+.scroll-indicator-box {
+  border: 2px solid black;
+  max-height: 200px;
+  overflow: scroll;
+  scroll-timeline-name: --scale-progress;
+  scroll-timeline-axis: block;
+}
+
+.scroll-box-watcher {
+  /* position: fixed;
+  top: 50%;
+  left: 10%;
+  z-index: 900; */
+  background-color: tomato;
+
+  width: 1rem;
+  transform-origin: top;
+  scale: 1 0.1;
+  animation: scroll-watcher auto linear;
+  animation-timeline: --scale-progress;
+}
+
+.flexed-scroll-box {
+  display: flex;
+}
+
+@keyframes scroll-watcher {
+  to {
+    scale: 1 1;
+  }
+}
