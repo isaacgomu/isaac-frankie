@@ -3,7 +3,18 @@ const codeString = `
 /* This is the 'whole page' */
 /*  --- --- --- --- */
 .scroll-indicator-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   padding: 3rem;
+}
+.explanation-block {
+  display: grid;
+  font-weight: 800;
+  place-items: center;
+}
+.explanation-block p {
+  width: 75%;
 }
 
 /*  --- --- --- --- */
@@ -82,6 +93,7 @@ const codeString = `
     scale: 1 1;
   }
 }
+
 
   `;
 

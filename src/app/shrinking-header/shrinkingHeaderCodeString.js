@@ -1,3 +1,4 @@
+const codeString = `
 /*  --- --- --- --- */
 /* This is the 'whole page' */
 /*  --- --- --- --- */
@@ -108,3 +109,7 @@ header,
     opacity: 0.7;
   }
 }
+
+`;
+
+export default codeString;

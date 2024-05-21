@@ -6,57 +6,76 @@ import codeString from "./scrollIndicatorCodeString";
 export default function scrollIndicator() {
   return (
     <div className="scroll-indicator-container">
-      <p>
-        <em>
-          Resource 1:{" "}
-          <a href="https://scroll-driven-animations.style/demos/progress-bar/css/">
-            scroll-driven-animations.style demo
-          </a>
-        </em>
-      </p>
-      <p>
-        <em>
-          Resource 2:{" "}
-          <a href="https://scroll-driven-animations.style/demos/progress-bar/css/">
-            Kevin Powell - 00:30 to 02:44
-          </a>
-        </em>
-      </p>
       <div className="scroll-watcher"></div>
-      <Lorem10Block />
-      <Lorem10Block />
-      <Lorem10Block />
-      <Lorem10Block />
-      <div className="container-scroll-box">
-        <div className="content-scroll-box">
-          <div className="animation-scroll-indicator"></div>
+      <h2>Progress bar at the top!</h2>
 
-          <Lorem10Block />
-          <Lorem10Block />
-          <Lorem10Block />
-        </div>
-      </div>
-      <div className="container-scroll-box">
-        <div className="content-scroll-box">
-          <div className="animation-scroll-indicator"></div>
-
-          <Lorem10Block />
-          <Lorem10Block />
-          <Lorem10Block />
-        </div>
+      <div className="resources">
+        <p>
+          <em>
+            Resource 1:{" "}
+            <a href="https://scroll-driven-animations.style/demos/progress-bar/css/">
+              scroll-driven-animations.style demo
+            </a>
+          </em>
+        </p>
+        <p>
+          <em>
+            Resource 2:{" "}
+            <a href="https://scroll-driven-animations.style/demos/progress-bar/css/">
+              Kevin Powell - 00:30 to 02:44
+            </a>
+          </em>
+        </p>
       </div>
 
-      <Lorem10Block />
-      <Lorem10Block />
-      <Lorem10Block />
+      <div className="explanation-block">
+        <p>
+          On this page, when you scroll down you can watch the bar at the top
+          track your scroll progress.
+        </p>
+      </div>
+      <div className="lorem-block">
+        <Lorem10Block />
+        <Lorem10Block />
+        <Lorem10Block />
+        <Lorem10Block />
+        <div className="explanation-block">
+          <p>
+            In this section, notice that the two containers below both have
+            their own scroll progress bars, independent of each other.
+          </p>
+        </div>
+        <div className="container-scroll-box">
+          <div className="content-scroll-box">
+            <div className="animation-scroll-indicator"></div>
 
-      <div className="code-section">
-        <p>Code for this demo:</p>
-        <pre>
-          <code>
-            <SyntaxHighlighter language="css">{codeString}</SyntaxHighlighter>
-          </code>
-        </pre>
+            <Lorem10Block />
+            <Lorem10Block />
+            <Lorem10Block />
+          </div>
+        </div>
+        <div className="container-scroll-box">
+          <div className="content-scroll-box">
+            <div className="animation-scroll-indicator"></div>
+
+            <Lorem10Block />
+            <Lorem10Block />
+            <Lorem10Block />
+          </div>
+        </div>
+
+        <Lorem10Block />
+        <Lorem10Block />
+        <Lorem10Block />
+
+        <div className="code-section">
+          <p>Code for this demo:</p>
+          <pre>
+            <code>
+              <SyntaxHighlighter language="css">{codeString}</SyntaxHighlighter>
+            </code>
+          </pre>
+        </div>
       </div>
     </div>
   );
