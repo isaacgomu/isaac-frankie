@@ -1,4 +1,4 @@
-import "../scroll-animations.css";
+import "./scroll-animations.css";
 
 export default function scrollIndicator() {
   return (
