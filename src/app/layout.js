@@ -31,8 +31,8 @@ export default function RootLayout({ children }) {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="#" className="nav-link">
-                <span className="link-text">Demo 3</span>
+              <Link href="/shrinking-header" className="nav-link">
+                <span className="link-text">Shrinking Header</span>
               </Link>
             </li>
             <li className="nav-item">

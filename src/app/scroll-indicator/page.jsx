@@ -6,6 +6,22 @@ import codeString from "./scrollIndicatorCodeString";
 export default function scrollIndicator() {
   return (
     <div className="scroll-indicator-container">
+      <p>
+        <em>
+          Resource 1:{" "}
+          <a href="https://scroll-driven-animations.style/demos/progress-bar/css/">
+            scroll-driven-animations.style demo
+          </a>
+        </em>
+      </p>
+      <p>
+        <em>
+          Resource 2:{" "}
+          <a href="https://scroll-driven-animations.style/demos/progress-bar/css/">
+            Kevin Powell - 00:30 to 02:44
+          </a>
+        </em>
+      </p>
       <div className="scroll-watcher"></div>
       <Lorem10Block />
       <Lorem10Block />
