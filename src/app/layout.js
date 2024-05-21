@@ -16,13 +16,13 @@ export default function RootLayout({ children }) {
         <nav className="navbar">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link href="/" class="nav-link">
-                <span class="link-text">Home</span>
+              <Link href="/" className="nav-link">
+                <span className="link-text">Home</span>
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/scroll-indicator" class="nav-link">
-                <span class="link-text">Scroll Indicator</span>
+              <Link href="/scroll-indicator" className="nav-link">
+                <span className="link-text">Scroll Indicator</span>
               </Link>
             </li>
             <li className="nav-item">
@@ -31,8 +31,8 @@ export default function RootLayout({ children }) {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="#" className="nav-link">
-                <span className="link-text">Demo 3</span>
+              <Link href="/shrinking-header" className="nav-link">
+                <span className="link-text">Shrinking Header</span>
               </Link>
             </li>
             <li className="nav-item">

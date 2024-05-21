@@ -1,3 +1,4 @@
+const codeString = `
 /*  --- --- --- --- */
 /* This is the 'whole page' */
 /*  --- --- --- --- */
@@ -92,3 +93,8 @@
     scale: 1 1;
   }
 }
+
+
+  `;
+
+export default codeString;
