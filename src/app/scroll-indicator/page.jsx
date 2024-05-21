@@ -20,9 +20,16 @@ export default function scrollIndicator() {
           <Lorem10Block />
         </div>
       </div>
-      <Lorem10Block />
-      <Lorem10Block />
-      <Lorem10Block />
+      <div className="container-scroll-box">
+        <div className="content-scroll-box">
+          <div className="animation-scroll-indicator"></div>
+
+          <Lorem10Block />
+          <Lorem10Block />
+          <Lorem10Block />
+        </div>
+      </div>
+
       <Lorem10Block />
       <Lorem10Block />
       <Lorem10Block />
