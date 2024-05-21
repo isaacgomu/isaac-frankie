@@ -88,8 +88,11 @@ export default function scrollIndicator() {
         molestias quaerat earum dolorem itaque quae omnis perspiciatis, at
         magnam.
       </p>
-      <div className="flexed-scroll-box">
-        <div className="scroll-indicator-box">
+
+      <div className="container-scroll-box">
+        <div className="content-scroll-box">
+          <div className="animation-scroll-indicator"></div>
+
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
             doloribus?
@@ -257,7 +260,6 @@ export default function scrollIndicator() {
             Dignissimos sequi id unde quis at quam earum placeat necessitatibus!
           </p>
         </div>
-        <div className="scroll-box-watcher"></div>
       </div>
 
       <p>
