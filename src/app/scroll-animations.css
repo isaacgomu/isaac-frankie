@@ -27,6 +27,7 @@
   overflow: scroll;
   scroll-timeline-name: --scale-progress;
   scroll-timeline-axis: block;
+  animation-timeline: scroll();
 }
 
 .scroll-box-watcher {
