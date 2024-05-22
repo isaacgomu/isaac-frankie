@@ -4,20 +4,33 @@
     transform: translateX(calc(-100% + 100vw));
   }
 }
-:root {
-  --text-color: #000;
-  --bg-color: #ffffff;
+
+.scrollh1 {
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: 10vw;
+  left: 10vw;
+  z-index: 4;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
-body {
-  font-family: termina, sans-serif;
-  color: var(--text-color);
-  background: var(--bg-color);
-  transition: 0.3s ease-out;
-  overflow-x: hidden;
-  max-width: 100%;
-  width: 100%;
-  overscroll-behavior: none;
+.scrollh1 span {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .scrollh1 {
+    font-size: 16vw;
+  }
+}
+
+.scrollh2 {
+  font-size: 2rem;
+  max-width: 400px;
 }
 
 section:not(#sectionPin) {
@@ -32,54 +45,11 @@ section:not(#sectionPin) {
   place-items: center;
 }
 
-img {
-  height: 80vh;
-  width: auto;
-  object-fit: cover;
-}
-
-h1 {
-  font-size: 5rem;
-  line-height: 1;
-  font-weight: 800;
-  margin-bottom: 1rem;
-  position: absolute;
-  top: 10vw;
-  left: 10vw;
-  z-index: 4;
-  overflow-wrap: break-word;
-  hyphens: auto;
-
-  @media (max-width: 768px) {
-    font-size: 16vw;
-  }
-
-  span {
-    display: block;
-  }
-}
-
-h2 {
-  font-size: 2rem;
-  max-width: 400px;
-}
-
-.credit {
-  font-family: Termina, sans-serif;
-  a {
-    color: var(--text-color);
-  }
-}
-
-* {
-  box-sizing: border-box;
-}
-
 #sectionPin {
   height: 500vh;
   overflow: visible;
   display: flex;
-  background: #2d003f;
+  background: var(--primary-color);
   color: var(--bg-color);
   view-timeline-name: --section-pin-tl;
   view-timeline-axis: block;
@@ -100,10 +70,11 @@ h2 {
   /* Link animation to view-timeline */
   animation-timeline: --section-pin-tl;
   animation-range: contain 0% contain 100%;
-  & > * {
-    min-width: 60vw;
-    padding: 0 5vw;
-  }
+}
+
+.pin-wrap > * {
+  min-width: 60vw;
+  padding: 0 5vw;
 }
 
 .pin-wrap-sticky {
@@ -138,4 +109,11 @@ h2 {
 
 .marker.four {
   top: 80%;
+}
+
+.code-section {
+  margin-left: 4rem;
+  border: 2px solid black;
+  max-height: 100vh;
+  overflow-y: scroll;
 }
