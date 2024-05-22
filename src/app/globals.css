@@ -2,21 +2,40 @@
 @tailwind components;
 @tailwind utilities; */
 
-body {
-  color: black;
-  background-color: white;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --text-color: #000;
+  --bg-color: #ffffff;
+  --primary-color: #2d003f;
+  --secondary-color: #ffffff;
 }
 
 .home-page {
-  margin-left: 5rem;
-  padding-top: 1rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: termina, sans-serif;
+  transition: 0.3s ease-out;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  overscroll-behavior: none;
 }
 
 h1 {
-  margin: 0;
+  font-size: 50px;
+  margin-left: 2rem;
+}
+
+h2 {
+  font-size: 25px;
 }
 
 .navbar {
@@ -26,7 +45,7 @@ h1 {
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: rgb(45, 0, 63);
+  background-color: var(--primary-color);
   transition: width 200ms ease;
 }
 
@@ -43,8 +62,7 @@ h1 {
   display: flex;
   align-items: center;
   height: 5rem;
-  text-wrap: wrap;
-  width: 5rem;
+  width: max-content;
   color: var(--text-primary);
   text-decoration: none;
 }
@@ -52,9 +70,10 @@ h1 {
 .link-text {
   visibility: hidden;
   opacity: 0;
-  color: white;
+  color: var(--secondary-color);
   transition: opacity 200ms ease, visibility 0s linear 200ms;
 }
+
 .link-text:hover {
   color: orange;
 }
@@ -67,4 +86,67 @@ h1 {
   visibility: visible;
   opacity: 1;
   transition: opacity 200ms ease, visibility 0s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.showButton {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: termina, sans-serif;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  margin-top: 100px;
+}
+
+.credit {
+  font-family: termina, sans-serif;
+}
+
+.credit a {
+  color: var(--text-color);
+}
+
+.list {
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 1000px;
+  width: 90%;
+}
+
+.listdiv {
+  display: flex;
+  justify-content: center;
+}
+
+.list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resourceLink {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.resourceLink:hover {
+  color: #6d3a6d;
+}
+
+.list li {
+  margin-bottom: 1rem;
+}
+
+.resourcediv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
