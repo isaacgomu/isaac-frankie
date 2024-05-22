@@ -46,22 +46,22 @@ export default function scrollIndicator() {
           </p>
         </div>
         <div className="container-scroll-box">
-          <div className="content-scroll-box">
-            <div className="animation-scroll-indicator"></div>
+          <div className="content-scroll-box parent">
+            <div className="animation-scroll-indicator-one child"></div>
 
             <Lorem10Block />
             <Lorem10Block />
             <Lorem10Block />
           </div>
         </div>
-        <div className="container-scroll-box">
-          <div className="content-scroll-box">
-            <div className="animation-scroll-indicator"></div>
 
+        <div className="container-scope-scroll-box">
+          <div className="with-scope-scroll-box">
             <Lorem10Block />
             <Lorem10Block />
             <Lorem10Block />
           </div>
+          <div className="animation-scroll-indicator-two"></div>
         </div>
 
         <Lorem10Block />

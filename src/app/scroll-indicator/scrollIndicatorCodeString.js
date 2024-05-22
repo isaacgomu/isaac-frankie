@@ -51,6 +51,7 @@ const codeString = `
   border: 2px solid black;
   position: relative;
 }
+
 /*  --- --- --- --- */
 /* This is holding the lorem ipsum */
 /*  --- --- --- --- */
@@ -58,13 +59,15 @@ const codeString = `
   height: 200px;
   padding-left: 1.5rem;
   overflow-y: scroll;
+  border: 2px solid blue;
+
   scroll-timeline: --lorem-scroll block;
 }
-/*  --- --- --- --- */
-/* This is holding both our content box and our scroll indicator */
-/*  --- --- --- --- */
 
-.animation-scroll-indicator {
+/*  --- --- --- --- */
+/* This is our animated scroll bar */
+/*  --- --- --- --- */
+.animation-scroll-indicator-one {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -78,10 +81,47 @@ const codeString = `
   transform-origin: bottom;
   scale: 1 0.005;
 
+  border: 2px solid yellow;
+
   animation: scroll-watcher linear;
   animation-timeline: --lorem-scroll;
 }
+/*  --- --- --- --- */
+/* This is how to do it with timeline-scope, which 'hoists' the scroll-timeline up to a parent */
+/* Including 'forwards' on the animation is important for it to stay. */
+/* https://developer.chrome.com/docs/css-ui/scroll-driven-animations#attaching_to_a_non-ancestor_scroll_timeline  */
+/*  --- --- --- --- */
+.container-scope-scroll-box {
+  display: flex;
+  height: 200px;
 
+  gap: 2rem;
+
+  border: 2px solid black;
+  timeline-scope: --my-scrollbox;
+}
+.with-scope-scroll-box {
+  padding-left: 1.5rem;
+  overflow-y: scroll;
+  border: 2px solid blue;
+
+  scroll-timeline-name: --my-scrollbox;
+}
+.animation-scroll-indicator-two {
+  background-color: tomato;
+
+  width: 1rem;
+  height: 100%;
+
+  transform-origin: top;
+  scale: 1 0.005;
+  border: 2px solid yellow;
+
+  animation: scroll-watcher linear forwards;
+  animation-timeline: --my-scrollbox;
+}
+
+/*  --- --- --- --- */
 .code-section {
   border: 2px solid black;
   max-height: 500px;
@@ -93,7 +133,6 @@ const codeString = `
     scale: 1 1;
   }
 }
-
 
   `;
 
