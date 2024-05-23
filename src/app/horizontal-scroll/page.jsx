@@ -51,7 +51,7 @@ export default function HorizontalScroll() {
             </h2>
             <h2 className="scrollh2">
               Within the section is a div with the class of
-              &quot;pin-wrap&quot;. This div has a width of 250vh, and is
+              &quot;pin-wrap&quot;. This div has a width of 250wh, and is
               animated with keyframes that move the element horizontally so
               it&apos;s right edge aligns with the viewers right edge.
             </h2>
