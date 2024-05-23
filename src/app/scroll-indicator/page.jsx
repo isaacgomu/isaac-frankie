@@ -21,7 +21,7 @@ export default function scrollIndicator() {
         <p>
           <em>
             Resource 2:{" "}
-            <a href="https://scroll-driven-animations.style/demos/progress-bar/css/">
+            <a href="https://www.youtube.com/watch?v=UmzFk68Bwdk">
               Kevin Powell - 00:30 to 02:44
             </a>
           </em>
