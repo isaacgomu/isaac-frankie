@@ -57,7 +57,7 @@ export default function HorizontalScroll() {
             </h2>
             <h2 className="scrollh2">
               The &quot;pin-wrap&quot; div is enclosed within the div of
-              &quot;pin-wrap-sticky&quot;, which has a width and height of 100vh
+              &quot;pin-wrap-sticky&quot;, which has a width and height of 100vw/vh
               but with the position of &quot;sticky&quot;, which means it sticks
               to the top of the page when scrolling, stopping the user from
               scrolling horizontally.
